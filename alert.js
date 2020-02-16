@@ -1,0 +1,1 @@
+alert("Hello word from another file");

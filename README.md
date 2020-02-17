@@ -31,3 +31,12 @@ Document.write คือการให้ javaScript เขียนข้อ�
 ```js
     document.write("<p>Hello this word write by function document.write of javaScript</p>");
 ```
+
+### การประกาศตัวแปร var
+```js
+    <script>
+        var x = 5;
+        var y = 10;
+        document.write("total :" + (x + y)); //total : 15
+    </script>
+```

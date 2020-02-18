@@ -22,4 +22,7 @@ const totalSingle = (a, b) => a + b ;
 let result = totalSingle (111, 15);
 
 console.log(result);
+
+var allCars =[ 'greencar', 'redcar',''];
+console.log(allCars);
  

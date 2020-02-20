@@ -19,5 +19,6 @@ console.log(carBrand3);
 
 //method .sort
 var number = [11, 15, 1, 5, 7, 155];
-console.log(number.sort((a, b) => a -b ));
+// console.log(number.sort((a, b) => a -b ));
+console.log(number.reverse());
 

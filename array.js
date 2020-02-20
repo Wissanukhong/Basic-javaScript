@@ -14,11 +14,15 @@ var carBrand3 = new Array();
 carBrand3[0] = "Toyata";
 carBrand3[1] = "Handa";
 carBrand3[2] = "Mazda";
-console.log(carBrand3);
-
+console.log(typeof carBrand3);
 
 //method .sort
 var number = [11, 15, 1, 5, 7, 155];
-// console.log(number.sort((a, b) => a -b ));
+console.log(number.sort((a, b) => a - b));
 console.log(number.reverse());
 
+var fruit = "apple";
+console.log(typeof fruit);
+
+var newFruit = new Array ("banana", "Mongo");
+console.log(typeof newFruit);

@@ -7,3 +7,9 @@ if (totalCar === 20) {
 }
 
 console.log("Outside blockscope", car);
+
+var allcar = new Array("toyata", "Benz",{name:"wissanu", lastName:"Khongjandee"});
+console.log(allcar);
+
+var carAll = new Array("honda", "yamaha");
+console.log(carAll);

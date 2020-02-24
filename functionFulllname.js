@@ -4,3 +4,5 @@ function myName(name, lastname) {
 }
 
 myName("wissanu", "Khongjandee");
+
+

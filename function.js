@@ -28,7 +28,7 @@ console.log(allCars);
 
 //old function
 function myName(myName) {
-  return "This is my name" + myName;
+  return 'This is my name' + myName;
 }
 console.log("wissanu khonfjandee");
 
@@ -49,4 +49,4 @@ function myUser(a,b) {
   var c = a + b
   return c;
 }
-console.log(myUser);
+console.log(myUser());

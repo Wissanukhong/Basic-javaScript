@@ -28,11 +28,9 @@ console.log(allCars);
 
 //old function
 function myName(myName) {
-  return 'This is my name' + myName ;
-};
+  return "This is my name" + myName;
+}
 console.log("wissanu khonfjandee");
-
-
 
 //new aroow function 1
 const fullName = newFunction => {
@@ -44,3 +42,11 @@ console.log(fullName("tle wissanu"));
 //new arrow function 2
 const lastname = allName => `This is return form function ${allName} ......`;
 console.log(lastname("Wissanu khongjandee"));
+
+function myUser(a,b) {
+  var a = "wissanu";
+  var b = "Khongjandee";
+  var c = a + b
+  return c;
+}
+console.log(myUser);

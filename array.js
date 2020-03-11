@@ -26,3 +26,16 @@ console.log(typeof fruit);
 
 var newFruit = new Array ("banana", "Mongo");
 console.log(typeof newFruit);
+
+//calback function
+function newFunction () {
+    console.log("This is new Function");
+    function callBackFunction() {
+        console.log("This is a callback Function");
+    }
+    return callBackFunction;
+}
+
+let newFunctionA = newFunction();
+newFunctionA();
+

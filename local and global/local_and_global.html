@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local and Global Variables</title>
+</head>
+<body>
+
+    <script>
+        //ขอบเขตการมองเห็นแบบ local คือทั้งโปรแกรมจะไม่สามารถมองเห็นตัวแปรนี้
+        if(true){
+
+            var a = 1;
+        }
+
+        {
+            var b = 2;
+        }
+
+        console.log(a, b)
+
+
+        //ขอบเขตการมองเห็นแบบ Global ทั้งโปรแกรมสามารถมองเห็นตัวแปรนี้
+        //จะเห็นว่าเราสามารถ ตั้งชื่อตัวแปรซำ้กันได้ แต่ค่าของตัวแปร จะไม่เหมือนกัน
+        var a = 2;
+        console.log(a)
+
+        var c = "Hi";
+        function myFunction() {
+            var c = "Bye";
+            console.log("This is local variable" + " " + c);
+        }
+
+        myFunction();
+        console.log( "This is global variable"+ " " + c);
+        console.log("This form function window call global variable" + " " + window.c); //Function window จะเป็นการเรียก Global 
+
+
+    </script>
+    
+</body>
+</html>

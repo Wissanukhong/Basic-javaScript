@@ -26,7 +26,9 @@
         say(sayHi);
         say(sayBye);
 
-        function newFunction () {
+
+        //calback function
+        function newFunction() {
             console.log("This is new Function");
             function callBackFunction() {
                 console.log("This is a callback Function");
@@ -34,8 +36,20 @@
             return callBackFunction;
         }
 
-        let newFunctionA = callBackFunction();
-        newFunctionA ();
+        let newFunctionA = newFunction();
+        newFunctionA();
+
+        //การส่งค่า Arguments เกินค่า paramters 
+        //ยกตัวอย่างเช่น ถ้าเรามี parameters 3 ตัว แต่เรามี arguments จำนวน 4 ตัว ค่าตัวสุดท้ายของ argument จะกลายเป็น Undefind ทันที
+        function sum(a, b) {
+            let total = a + b;
+            return total
+
+        }
+
+        console.log(sum(7, 5, 8)) //ค่าที่เห็นก็เป็น 12 นะ เพียงแต่ว่า argument ลำดับที่ 3 จะกลายเป็น undefined
+
+
 
 
     </script>

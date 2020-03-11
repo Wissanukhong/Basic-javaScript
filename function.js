@@ -43,6 +43,8 @@ console.log(fullName("tle wissanu"));
 const lastname = allName => `This is return form function ${allName} ......`;
 console.log(lastname("Wissanu khongjandee"));
 
+
+
 function myUser(a,b) {
   var a = "wissanu";
   var b = "Khongjandee";
@@ -50,3 +52,5 @@ function myUser(a,b) {
   return c;
 }
 console.log(myUser());
+
+

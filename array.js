@@ -39,3 +39,14 @@ function newFunction () {
 let newFunctionA = newFunction();
 newFunctionA();
 
+function newName () {
+    var name = "Name";
+    return name;
+}
+
+console.log(newName());
+
+const newLastname = () => {
+    name = "Lastname";
+}
+console.log(newLastname())

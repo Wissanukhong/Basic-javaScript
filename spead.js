@@ -1,8 +1,8 @@
-//การเขียน Array แบบที่ 1 
-let alpha = ["a", "b", "c"]
+//การเขียน Array แบบที่ 1
+let alpha = ["a", "b", "c"];
 console.log(alpha);
 
-//การเขียน Array แบบที่ 2 
+//การเขียน Array แบบที่ 2
 let number = new Array(1, 2, 3);
 console.log(number);
 
@@ -16,3 +16,11 @@ console.log(alphaNumber);
 
 let numberAlpha = number.concat(alpha);
 console.log(numberAlpha);
+
+//workshop concat
+const toyotaCar = ["Yaris", "Camry", "Revo"];
+
+const isuzuCar = ["Dmax", "Dragon"];
+
+const allCars = toyotaCar.concat(isuzuCar);
+console.log(allCars);

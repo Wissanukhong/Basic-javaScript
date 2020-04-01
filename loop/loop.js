@@ -24,3 +24,14 @@ let looper = i => {
 
 console.log(looper(2))
 
+//variable
+var x = 5;
+var y = 6;
+var z = x + y;
+
+//function
+function myFunction(p1, p2) {
+    return p1 * p2;   // The function returns the product of p1 and p2
+  }
+
+  console.log(myFunction(3, 5));

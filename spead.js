@@ -24,3 +24,5 @@ const isuzuCar = ["Dmax", "Dragon"];
 
 const allCars = toyotaCar.concat(isuzuCar);
 console.log(allCars);
+
+

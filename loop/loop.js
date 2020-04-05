@@ -44,3 +44,4 @@ document.getElementById("demo").innerHTML = txt;
 function myFunction(value, index, array) {
   txt = txt + value + "<br>";
 }
+

@@ -55,5 +55,33 @@ Interation Statement คือการกำหนดว่าให้โป�
 
 
 ### Variables
+คือการสร้างตัวแปรขึ้นมาตามชนิดที่เราต้องการ โดยแบ่งชนิดตาม Data type ที่โปรแกรมกำหนดมาให้ จากนั้นเรากฌทำการกำหนดค่าให้กับตัวแปรนั้น  
+```js
 
-### Type of statements   
+    // Variable and Datetype
+
+    // string
+    var firstName = "Wissanu";
+    console.log(firstName);
+
+    // number
+    var age = 27;
+
+    // boolean [true, false]
+    var fullAge = false;
+
+    // Undefined
+    var car;
+
+    // Null
+    var teacher = null
+
+```
+
+### Data Types
+1. Number 
+2. String
+3. Boolean
+4. Undefined
+5. Null
+

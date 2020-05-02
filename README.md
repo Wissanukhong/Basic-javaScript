@@ -212,4 +212,4 @@ Example 3
     console.log("BIMsJohn's less than BMIsPobs Pob");
     }
 ```
-เดี๋ยวจะลองทำโจทย์ if else statement เยอะๆ 
+เดี๋ยวจะลองทำโจทย์ if else statement เยอะๆ [โจทย์สำหรับฝึก crdit : http://www.comscicafe.com/ ](http://www.comscicafe.com/article/93/workshop-selection-statements-part-2#.XqzR_agzbIV)

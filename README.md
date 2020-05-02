@@ -212,3 +212,4 @@ Example 3
     console.log("BIMsJohn's less than BMIsPobs Pob");
     }
 ```
+เดี๋ยวจะลองทำโจทย์ if else statement เยอะๆ 

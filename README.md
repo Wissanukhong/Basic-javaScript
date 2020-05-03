@@ -6,8 +6,10 @@ javaScript เป็นภาษาโปรแกรมคอมพิวเต
 
 - [Statement](#Statement)
 - [Variables and Data type](#Variables)
-- [Operators](Operators)
-- [if-else statement](#if_else_statement)
+- [Operators](#Operators)
+- [if-else statement](#if-else-statement)
+- [Code Challenge Operator](#Code-Challenge-Operator)
+- [Function](#Function)
 
 ### Statement
 
@@ -218,3 +220,80 @@ Example 3
 * one eual
 * Two equals
 * Three equals 
+
+### Code Challenge Operator 
+```js 
+
+    //Code Challence operators
+    // First is averg the value in thos variables
+
+    // John team
+    var firstJohn = 116;
+    var secondJohn = 94;
+    var thirdJohn = 123;
+
+    var averageJohn = (firstJohn + secondJohn + thirdJohn)/3 ;
+    console.log("the average of John is " + averageJohn);
+
+    // Mike team
+    var firstMike = 116;
+    var secondMike = 94;
+    var thirdMike = 123;
+
+    var averageMike = (firstMike + secondMike + thirdMike) / 3;
+    console.log("The average of Mike is  " + averageMike);
+
+    // if else statement
+    if (averageJohn > averageMike) {
+        console.log("John is the Winner with this score " + averageJohn);
+    } else if (averageMike > averageJohn) {
+        console.log("Mike is the Winner with this score " + averageMike)
+    } else {
+        console.log("There is a draw");
+    }
+
+
+    // swtich case style
+    switch (true) {
+        case averageJohn > averageMike :
+            console.log("John is the Winner with this score " + averageJohn);
+            break;
+        case averageMike > averageJohn :
+            console.log("Mike is the Winner with this score " + averageMike)
+            break;
+        default :
+            console.log("there is a draw");
+    }
+
+    // ternary style
+    averageJohn > averageMike 
+        ? console.log("John is the Winner with this score " + averageJohn)
+        : console.log("Mike is the Winner with this score " + averageMike) 
+```
+
+### Function
+เวลาที่เราจะต้องเขียนโปรแกรมสำหรับคำนวณหรือว่า ต้องการให้โปรแกรมต้องทำงานตามที่เราต้องการ ถ้าหากเราไม่เขียนแบบเป็น Function เราจะต้องเขียนคำส่ังนั้นซ้ำๆ เป็นจำนวนมาก แต่ว่า ถ้าหากเราเขียนโปรแกรมด้วย Function เราจะสามารถเรียกใช้ชุดคำสั่งนั้นได้โดยที่เราไม่ต้องไปเขียนคำสั่งซ้ำๆ กันจำนวนมากนั้นเอง ยกตัวอย่าง Function คำนวณอายุ ถ้าหากเราไม่เขียนเป็น function เราจะต้องเขียนคำสั่งดังนี้ 
+```js 
+  var yearnow = 2020;
+  
+  var yearJohn = 1993;
+
+  var yearMark = 1920;
+
+  var yearOldJohn = yearNow - yearJohn;
+  var yearOleMark = yearNow - yearMark;
+  console.log(yearOldJohn, yearOldMark);
+
+```
+ซึ่งเราจะเห็นว่าเราจะต้องเขียน Code คล้่ายๆ กันจำนวนหลายบันทัด แต่ถ้าหากเราใช้ Function เราจะสามารถเขียนโปรแกรมได้สั้นลง ตัวอย่างเช่น
+
+```js
+  function yearOld (name, yearBirth) {
+      var yearNow = 2020 - yearBirth
+      console.log(name + yearNow)
+  }
+
+  yearOld("john", 1993)
+
+
+```

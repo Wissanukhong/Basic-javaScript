@@ -217,9 +217,9 @@ Example 3
 เดี๋ยวจะลองทำโจทย์ if else statement เยอะๆ [โจทย์สำหรับฝึก crdit : http://www.comscicafe.com/ ](http://www.comscicafe.com/article/93/workshop-selection-statements-part-2#.XqzR_agzbIV)
 
 ### Equaly Operators
-* one eual
-* Two equals
-* Three equals 
+* one eual is defined value into the variables
+* Two equals is check the value between variable but it is not the same value javaScript will change the value from number to string 
+* Three equals is the different from the two equal, that is all meannig such as data type and the value
 
 ### Code Challenge Operator 
 ```js 

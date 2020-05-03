@@ -213,3 +213,8 @@ Example 3
     }
 ```
 เดี๋ยวจะลองทำโจทย์ if else statement เยอะๆ [โจทย์สำหรับฝึก crdit : http://www.comscicafe.com/ ](http://www.comscicafe.com/article/93/workshop-selection-statements-part-2#.XqzR_agzbIV)
+
+### Equaly Operators
+* one eual
+* Two equals
+* Three equals 

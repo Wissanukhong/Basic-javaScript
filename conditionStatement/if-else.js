@@ -40,4 +40,6 @@ switch (BMIsJohn > BMIsPob) {
     break;
   case false :
     console.log("BIMsJohn's less than BMIsPobs Pob");
+  default :
+    console.log("something wrong")
 }

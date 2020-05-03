@@ -33,3 +33,11 @@ if (BMIsJohn > BMIsPob) {
 } else {
   console.log("BIMsJohn's less than BMIsPobs Pob");
 }
+
+switch (BMIsJohn > BMIsPob) {
+  case true :
+    console.log("BMIsJonh's John more than BMIsPobs Pob");
+    break;
+  case false :
+    console.log("BIMsJohn's less than BMIsPobs Pob");
+}

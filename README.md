@@ -298,3 +298,44 @@ Example 3
 
 ```
 ซึ่งเราจะเห็นว่าเราไม่จำเป็นที่จะต้องเขียนคำสั่งซ้ำๆ เพียงแค่เราเรียนใช้ Function เท่านั้นก็สามารถเรียกใช้ คำส่ังที่เราต้องการได้เลย 
+
+### Array 
+Array คือสิ่งที่เราสามารถที่จะเอาอะไรก็ได้เก็บไว้ในตัวแปร เพียงตัวแปรเดียว อย่างที่เราเห็นในบทเรียนที่ผ่านมา เราจะต้องสร้างตัวแปรสำหรับคนทีละคน แต่พอเราสร้างตัวแปรแบบ Array เราสามารถที่เอาชื่อของที่คนเข้ามาอยู่ในที่เดียวกันได้ ยกตัวอย่าง Array ดังต่อไปนี้ 
+
+Example 
+```js
+//First style
+var cars = ["Toyoya", "Honda", "Suzuki"];
+
+//seconde style
+var cars = new Array =("Toyoya", "Honda", "Suzuki")
+
+//การเพิ่มค่าเข้าไปใน Array 
+cars.push("Something"); //เป็นเพิ่มค่าไปต่อที่ค่าหลังสุด
+
+//การเพิ่มค่าที่ค่าแรกใน Array
+cars.unshift("something");
+
+//การลบค่าสุดท้ายใน Array ออก
+cars.pop();
+
+//การลบค่าแรกใน Array ออก
+cars.shift();
+
+// วิธีตรวจเช็คว่ามีค่านั้นอยู่ใน Array หรือไม่ โดยการใช้คำสั่ง arrayName.indexOf("something")
+var John = ["John", "Smith", 1993, "Teacher"];
+console.log(John)
+
+// ternary condition
+var checkJob = John.indexOf("Designer") === -1 
+    ? "John is not Designer" 
+    : "John is a Designer"
+console.log(checkJob)
+
+//if else condition
+if (John.indexOf("Designer") === -1 ) {
+    console.log("John is not Designer");
+}else {
+    console.log("John is a Designer")
+}
+```

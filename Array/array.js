@@ -16,3 +16,9 @@ var checkJob = John.indexOf("Designer") === -1
     ? "John is not Designer" 
     : "John is a Designer"
 console.log(checkJob)
+
+if (John.indexOf("Designer") === -1 ) {
+    console.log("John is not Designer");
+}else {
+    console.log("John is a Designer")
+}

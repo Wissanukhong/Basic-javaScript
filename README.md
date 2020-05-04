@@ -339,3 +339,5 @@ if (John.indexOf("Designer") === -1 ) {
     console.log("John is a Designer")
 }
 ```
+### Object
+### Loop

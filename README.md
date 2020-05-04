@@ -340,4 +340,31 @@ if (John.indexOf("Designer") === -1 ) {
 }
 ```
 ### Object
+เราสามารถที่จะนำเอาค่าเข้าไปเก็บใน Object ได้หลากหลายค่า โดยภายในจะประกอบไปด้วย key: vulue  
+Example 
+```js
+  var myObject = {
+    //key: value
+    firstName: "John",
+    lastName: "Smith",
+    job: "Teacher",
+    age: 25,
+    yearBirth: 1993,
+    famaly: ["Jane", "Dan", "Jonathan"],
+    married: false
+  }
+```
+จากตัวอย่างเราจะเห็นว่า เราสามารถเก็บค่าอะไรก็ได้เข้าไปไว้ใน Object นอกจากนี้เรายังสามารถที่จะ ใช้เขียน function ภายใน Object ได้อีกด้วย  
+Example 
+```js
+  var Tle = {
+    fullname: "Wissanu Khongjandee",
+    mass: 80,
+    height: 1.73,
+    calcBMI: function () {
+      this.bmi = this.mass / (this.height * this.height);
+      return this.bmi;
+    },
+  };
+```
 ### Loop

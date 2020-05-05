@@ -27,6 +27,7 @@ var total = [
 console.log(tips, total);
 
 // switch 
+
 function discountOil (oilBills) {
     var perDiscount;
     switch (true) {

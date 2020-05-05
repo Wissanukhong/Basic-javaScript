@@ -26,3 +26,21 @@ function yearOld1 (name1, yearBirth1) {
 }
 
 yearOld1("john", 1993)
+
+function yearOld (yearBirth) {
+    return 2020 - yearBirth;
+}
+
+var yearJohn = yearOld(1993);
+console.log(`John is ${yearJohn} years `)
+
+
+
+
+
+// function calculator your age
+function yearNow (birth) {
+    return 2020 - birth 
+}
+
+console.log(yearNow(1990))

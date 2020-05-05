@@ -44,3 +44,53 @@ function yearNow (birth) {
 }
 
 console.log(yearNow(1990))
+
+// function star
+function star (x, y) {
+    var total = x * y
+    var c ;
+    if (total > 100 ) {
+        c = 2;
+    } else if (total >= 100 && total < 200) {
+        c = 5;
+    }
+    return c * total;
+}
+
+// var sumary = star(5, 20)
+// console.log(sumary);
+console.log(star(5, 20));
+
+
+// function expression
+var yourJob = function (job, name) {
+    switch (job) {
+        case "Teacher" :
+            return name + " Your job can not get the money";
+            break;
+        case "Driver" :
+            return name + " Your job can get the money";
+            break;
+        case "Designer"  :
+            return` ${name}  Your job can not get the money`;
+            break;
+        default:
+            return name + " Your are the frammer";
+    }
+}
+
+console.log(yourJob("Designer", "Tle"))
+console.log(yourJob("Teacher", "Tle"))
+console.log(yourJob("Driver", "Tle"))
+
+//function declaration 
+function getJob (Name, job) {
+    if(job === "web"){
+        console.log(`${Name} your job is a web developer`);
+    }else {
+        console.log(`${Name} your job is not a web developer `);
+    };
+}
+
+console.log(getJob("Chai", "web"));
+console.log(getJob("Mark", "Web"));

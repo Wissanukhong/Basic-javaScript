@@ -44,3 +44,19 @@ for (var i = books.length -1; i >=0; i--) {
     console.log(books[i])
 }
 
+
+
+// for loop
+var a = [123,12,1];
+
+for (i=0; i < a.length; i++) {
+    console.log(a[i])
+}
+
+// while loop
+var b = [123,12,1];
+var i = o;
+while(i < b.length) {
+    console.log(b(i))
+    i++
+}

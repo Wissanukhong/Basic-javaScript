@@ -94,3 +94,10 @@ function getJob (Name, job) {
 
 console.log(getJob("Chai", "web"));
 console.log(getJob("Mark", "Web"));
+
+// function experssion
+var calculate = function (x, y) {
+    return x + y;
+}
+
+console.log(calculate(15,5))

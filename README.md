@@ -273,11 +273,32 @@ Example 3
 
 ### Function
 เวลาที่เราจะต้องเขียนโปรแกรมสำหรับคำนวณหรือว่า ต้องการให้โปรแกรมต้องทำงานตามที่เราต้องการ ถ้าหากเราไม่เขียนแบบเป็น Function เราจะต้องเขียนคำส่ังนั้นซ้ำๆ เป็นจำนวนมาก แต่ว่า ถ้าหากเราเขียนโปรแกรมด้วย Function เราจะสามารถเรียกใช้ชุดคำสั่งนั้นได้โดยที่เราไม่ต้องไปเขียนคำสั่งซ้ำๆ กันจำนวนมากนั้นเอง ยกตัวอย่าง Function คำนวณอายุ ถ้าหากเราไม่เขียนเป็น function เราจะต้องเขียนคำสั่งดังนี้ 
-```js 
-  var yearnow = 2020;
-  
-  var yearJohn = 1993;
 
+* Function declaration 
+```js
+  function calculate (x, y) {
+    return x + y ;
+  }
+
+  consol.log(calculate(15, 5)): //20
+
+```
+* Function expression
+```js
+  var calculate = function (x, y) {
+      return x + y;
+  }
+
+console.log(calculate(15,5))
+
+```
+
+
+
+
+```js 
+  var yearnow = 2020;  
+  var yearJohn = 1993;
   var yearMark = 1920;
 
   var yearOldJohn = yearNow - yearJohn;

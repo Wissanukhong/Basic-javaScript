@@ -53,10 +53,22 @@ for (i=0; i < a.length; i++) {
     console.log(a[i])
 }
 
-// while loop
+// while loop practise
 var b = [123,12,1];
-var i = o;
+var i = 0;
 while(i < b.length) {
-    console.log(b(i))
+    var c = b[i] * 2
+    console.log(c)
+    i++
+}
+
+
+// while loop practise
+var allBooks = ['Jonash', 'Auro x', 'Long learn'];
+var i = 0;
+
+while(i < allBooks.length) {
+    var book = allBooks[i];
+    console.log(book);
     i++
 }

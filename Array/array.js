@@ -1,7 +1,8 @@
 // Array
 var names = ["John", "Mark", "Jane"];
 var years = new Array(12, 12, 13)
-console.log(names, years)
+document.getElementById("demo").innerHTML = names;
+// console.log(names, years)
 
 names[2] = "Ben";
 console.log(names);

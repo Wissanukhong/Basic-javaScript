@@ -27,6 +27,7 @@ javaScript เป็นภาษาโปรแกรมคอมพิวเต
 - [Loop](#Loop)
 - [condition and break](#condition-and-break)
 - [Hoisting](#Hoisting)
+- [สำหรับอ่านเพิ่มเติมเพื่อฝึกความรู้ต่าง แต่ Slide เป็น Python](https://web.facebook.com/tautologyai/posts/2750455501743000?_rdc=1&_rdr)
 
 ### Statement
 

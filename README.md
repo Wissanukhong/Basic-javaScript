@@ -22,6 +22,10 @@ javaScript เป็นภาษาโปรแกรมคอมพิวเต
 - [if-else statement](#if-else-statement)
 - [Code Challenge Operator](#Code-Challenge-Operator)
 - [Function](#Function)
+- [Array](#Array)
+- [Object](#Object)
+- [Loop](#Loop)
+- [condition and break](#condition-and-break)
 - [Hoisting](#Hoisting)
 
 ### Statement
@@ -549,4 +553,24 @@ retirement(1993); //Uncaught TypeError: retirement is not a function
 var retirement = function (year) {
   console.log(60 - (2020 - year));
 };
+```
+
+แต่ว่าถ้าหากเป็น variables ค่าของ Hoisting จะกลายเป็น Undefined ทันที
+
+```js
+// variables
+console.log(age); // undefined
+var age = 27;
+console.log(age);
+```
+
+```js
+// declaration function
+function foo() {
+  var age = 65;
+  console.log(age); // 65
+}
+
+foo();
+console.log(age); // 27
 ```

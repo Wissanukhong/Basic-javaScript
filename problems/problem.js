@@ -28,3 +28,17 @@ if (hundred === 100) {
 } else {
     console.log("it is not equal 100 is not OK");
 }
+
+// if else statement practise 
+/**
+ * If let myName equal Wissanu 
+ * display show Hi Wissanu
+ * else the name dose not matching display show Your are not Wissanu, Please check your name again
+ * stop 
+ */
+let myName = "Wissanu";
+if(myName == "wissanu") {
+    console.log("Hi Wissanu");
+} else {
+    console.log("Your are not Wissanu, Please check your name again")
+}

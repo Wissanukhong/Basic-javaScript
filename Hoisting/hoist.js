@@ -33,3 +33,4 @@ function foo () {
 
 foo() 
 console.log(age); // 27 
+

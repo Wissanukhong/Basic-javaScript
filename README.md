@@ -584,4 +584,11 @@ console.log(age); // 27
 ```
 ### Method borrowing
 
-### DOM
+### DOM 
+
+### Game
+- Math.random() //เป็นการ random ค่าของตัวเลขออกมา 0.0 - 0.9
+- Math.floor(Math.random) //เป็นการทำให้ค่าที่เรา Random มีค่าเป็นจำนวนเต็ม
+- Math.floor(Math.random() * 6 ) //จะแสดงค่าออกมาเป็น 0 - 5 
+- Math.floor(Math.random() * 6 ) + 1  //เราไม่ต้องการระหว่าง 0 - 5 ดังนั้นเราจะต้องเอาผลลัพธ์มาบวก 1 เพื่อที่จะได้ค่าระหว่าง 1 - 6 นั้นเอง
+

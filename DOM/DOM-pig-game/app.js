@@ -17,3 +17,6 @@ console.log(x)
 
 // hide the picture for the first time
 document.querySelector('.dice').style.display = 'none';
+
+// addEventListener is when we click this bottom what we want it to do
+doucment.querySelector('.btn-rol').addEventListener('click');

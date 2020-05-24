@@ -30,9 +30,8 @@ javaScript เป็นภาษาโปรแกรมคอมพิวเต
 - [Method Borrowing](#Method-borrowing)
 - [DOM](#DOM)
 
-
-
 ## Link สำหรับอ่านเพิ่มเติม
+
 - [สำหรับอ่านเพิ่มเติมเพื่อฝึกความรู้ต่าง แต่ Slide เป็น Python](https://web.facebook.com/tautologyai/posts/2750455501743000?_rdc=1&_rdr)
 - [javaScript ของพี่ Virayut ](https://github.com/lvarayut/javascript-style-guide?fbclid=IwAR0MApZHzfXDUKxczVIHwM6lIAWRN6GFAoCkrlTguA9AVQ3ZD6E1a02nNeg)
 
@@ -582,18 +581,50 @@ function foo() {
 foo();
 console.log(age); // 27
 ```
-### Method borrowing
 
-### DOM 
+### Methord borrowing
+
+methoed borrowing คือการเรียกใช้ function จาก Array, Object อื่นมาใช้งานหรือเรียกว่าการยืมนั้นเอง ยกตัวอย่างเช่นถ้าหากเรามีฟังก์ชั่นการคำนวณอายุ เราจะสามารถ เขียนได้ 3 วิธีดังนี้
+
+1. สร้างฟังก์ชั่นแบบ Global แล้วเรียนใช้งานทั้งโปรแกรม
+2. สร้างฟังก์ชั่นแบบ Methord borrowing (การเรียกใช้ฟังก์ชั่นจากที่อื่น)
+3. เขียนฟังก์ชั่นซ้ำๆ กันไปเรื่อย ซึ่งแน่นอนว่า ไม่ใช้วิธีที่ควรทำ
+
+Example methoed borrowing
+
+- จงสร้างฟังก์ชั่นการคำนวณอายุของผู้คน ด้วยฟังก์ชั่น Methord borrowing
+
+```js
+var john = {
+  name: "John",
+  yearOfBirth: 1993,
+  calculateAge: function () {
+    console.log(2020 - this.yearOfBirth);
+  },
+};
+
+john.calculateAge();
+
+var mike = {
+  name: "Mike",
+  yearOfBirth: 1990,
+};
+
+// assigned the value from mike like john function
+// call the function 
+mike.calculateAge = john.calculateAge;
+mike.calculateAge();
+```
+
+### DOM
 
 ### Game
+
 - Math.random() //เป็นการ random ค่าของตัวเลขออกมา 0.0 - 0.9
 - Math.floor(Math.random) //เป็นการทำให้ค่าที่เรา Random มีค่าเป็นจำนวนเต็ม
-- Math.floor(Math.random() * 6 ) //จะแสดงค่าออกมาเป็น 0 - 5 
-- Math.floor(Math.random() * 6 ) + 1  //เราไม่ต้องการระหว่าง 0 - 5 ดังนั้นเราจะต้องเอาผลลัพธ์มาบวก 1 เพื่อที่จะได้ค่าระหว่าง 1 - 6 นั้นเอง  
+- Math.floor(Math.random() \* 6 ) //จะแสดงค่าออกมาเป็น 0 - 5
+- Math.floor(Math.random() \* 6 ) + 1 //เราไม่ต้องการระหว่าง 0 - 5 ดังนั้นเราจะต้องเอาผลลัพธ์มาบวก 1 เพื่อที่จะได้ค่าระหว่าง 1 - 6 นั้นเอง
 
+//select the elelment
 
-//select the elelment 
 - document.querySelector('#score-0').textContent = dice;
-
-

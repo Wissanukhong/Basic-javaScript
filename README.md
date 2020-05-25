@@ -611,9 +611,15 @@ var mike = {
 };
 
 // assigned the value from mike like john function
-// call the function 
+// call the function
 mike.calculateAge = john.calculateAge;
 mike.calculateAge();
+```
+
+```
+หรือว่าสรุปแบบง่ายๆ คือ การเรียกใช้ function จาก function อื่นนั้นเอง ข้อดีคือ
+- เราไม่ต้องเขียน Function ทีมี Logic เหมือนกันซ้ำๆ
+- ทำให้ Code ของเราอ่านง่ายมากยิ่งขึ้น
 ```
 
 ### DOM

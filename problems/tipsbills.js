@@ -25,4 +25,6 @@ var john = {
 }
 
 john.calcTips();
-console.log(john)
+console.log(john); 
+
+

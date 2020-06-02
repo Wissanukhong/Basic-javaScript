@@ -1,10 +1,13 @@
-# Basic javaScript
+<div align="center">
+  <img src="assets/javascript.png" />
+  <h1>javaScript</h1>
+</div>
 
 javaScript เป็นภาษาโปรแกรมคอมพิวเตอร์ที่ใช้สำหรับเขียนโปรแกรมสำหรับ Website ในปัจจุบันได้รับความนิยมเป็นอย่างมากสำหรับพัฒนาโปรแกรมที่หลากหลายมากขึ้นไม่ว่าจะเป็น Web Application ต่างๆ ซึ่งเราจะสามารถพัฒนาโปรแกรมได้หลากหลายมากยิ่งขึ้นโดยที่เราเรียนรู้เพียงแค่ภาษา JavaScript เพียงแค่ภาษาเดียวนั้นเท่านั้นเอง ไม่ว่าจะเป็น Front-end หรือว่า Back-end เราก็สามารถที่จะใช้ภาษา JavaScipt ในการพัฒนาได้ด้วย
 
 > # javaScipt
 >
-> javaScrip เป็นภาษาโปรแกรมมิงแบบ Dynamic type กล่าวคือ สามารถเปลี่ยนแปลง data type ได้ตลอดเวลานั้นเอง
+> javaScrip เป็นภาษา Programming แบบ Dynamic type กล่าวคือ สามารถเปลี่ยนแปลง data type ได้ตลอดเวลานั้นเอง
 
 #### Front-end
 
@@ -661,13 +664,11 @@ DOM (Document Object Model)
    ![hidepicture](./assets/HidePiceture.png)
 
 ### Example code
+
 ```html
 <div class="container">
   <div class="hideThis">
-    <img
-      src="https://images.unsplash.com/photo-1591027265757-46e6f1b916de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
-      alt="picture"
-    />
+    <img src="path ที่เราต้องการให้รูปภาพมาแสดง" alt="picture" />
   </div>
   <button id="hidepiceture" onclick="hidePicture()">Hide</button>
 </div>

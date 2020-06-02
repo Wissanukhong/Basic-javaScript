@@ -33,6 +33,7 @@ javaScript เป็นภาษาโปรแกรมคอมพิวเต
 - [Hoisting](#Hoisting)
 - [Method Borrowing](#Method-borrowing)
 - [DOM](#DOM)
+- [Exercise](#Exercise)
 
 ## Link สำหรับอ่านเพิ่มเติม
 
@@ -649,3 +650,32 @@ DOM (Document Object Model)
 //select the elelment
 
 - document.querySelector('#score-0').textContent = dice;
+
+### Exercise
+
+1. ### The Problem
+1. Have got a picture
+1. Have got a button
+1. They are center
+1. If the user click on hide that picture hide the display.
+   ![hidepicture](./assets/HidePiceture.png)
+
+### Example code
+```html
+<div class="container">
+  <div class="hideThis">
+    <img
+      src="https://images.unsplash.com/photo-1591027265757-46e6f1b916de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+      alt="picture"
+    />
+  </div>
+  <button id="hidepiceture" onclick="hidePicture()">Hide</button>
+</div>
+
+<script>
+  //function declaration
+  function hidePicture() {
+    document.querySelector(".hideThis").style.display = "none";
+  }
+</script>
+```

@@ -23,27 +23,27 @@ javaScript เป็นภาษาโปรแกรมคอมพิวเต
 
 ## contents
 
-- [Statement](#Statement)
-- [Variables and Data type](#Variables)
-- [Operators](#Operators)
-- [if-else statement](#if-else-statement)
-- [Code Challenge Operator](#Code-Challenge-Operator)
-- [Function](#Function)
-- [Array](#Array)
-- [Object](#Object)
-- [Loop](#Loop)
-- [condition and break](#condition-and-break)
-- [Hoisting](#Hoisting)
-- [Method Borrowing](#Method-borrowing)
-- [DOM](#DOM)
-- [Exercise](#Exercise)
+1. [Statement](#Statement)
+2. [Variables and Data type](#Variables)
+3. [Operators](#Operators)
+4. [condition statement](#condition-statement)
+5. [Function](#Function)
+6. [Array](#Array)
+7. [Object](#Object)
+8. [Loop](#Loop)
+9. [condition and break](#condition-and-break)
+10. [Hoisting](#Hoisting)
+11. [Method Borrowing](#Method-borrowing)
+12. [DOM](#DOM)
+13. [Exercise](#Exercise)
+14. [Code Challenge Operator](CodeChallenge)
 
-## Link สำหรับอ่านเพิ่มเติม
+### Link สำหรับอ่านเพิ่มเติม
 
 - [สำหรับอ่านเพิ่มเติมเพื่อฝึกความรู้ต่าง แต่ Slide เป็น Python](https://web.facebook.com/tautologyai/posts/2750455501743000?_rdc=1&_rdr)
 - [javaScript ของพี่ Virayut ](https://github.com/lvarayut/javascript-style-guide?fbclid=IwAR0MApZHzfXDUKxczVIHwM6lIAWRN6GFAoCkrlTguA9AVQ3ZD6E1a02nNeg)
 
-### Statement
+### 1. Statement
 
 statement คือ คำสั่งว่าเราต้องการให้โปรแกรมของเราทำงานอะไรนั้นเอง และเราสามารถเขียนคำสั่ง ควบคุมการทำงานของโปรแกรม โดยมีทั้งหมด 3 ส่วนหลักๆ ดังนี้
 
@@ -88,7 +88,7 @@ if (a < b) {
 
 ---
 
-### Variables
+### 2. Variables
 
 คือการสร้างตัวแปรขึ้นมาตามชนิดที่เราต้องการ โดยแบ่งชนิดตาม Data type ที่โปรแกรมกำหนดมาให้ จากนั้นเราสามารถทำการกำหนดค่าให้กับตัวแปรนั้นได้ ยกตัวอย่างเช่น เราต้องการให้ค่า var a = 5 ;
 
@@ -154,7 +154,7 @@ var teacher = null;
 4. Undefined
 5. Null
 
-### Operators
+### 3. Operators
 
 Operators คือตัวดำเนินการโดยสามารถแบ่งออกเป็นหัวข้อใหญ่ดังต่อไปนี้คือ
 
@@ -264,62 +264,13 @@ if (BMIsJohn > BMIsPob) {
 }
 ```
 
-เดี๋ยวจะลองทำโจทย์ if else statement เยอะๆ [โจทย์สำหรับฝึก crdit:http://www.comscicafe.com/](http://www.comscicafe.com/article/93/workshop-selection-statements-part-2#.XqzR_agzbIV)
+โจทย์สำหรับฝึก condition statement [โจทย์สำหรับฝึก crdit:http://www.comscicafe.com/](http://www.comscicafe.com/article/93/workshop-selection-statements-part-2#.XqzR_agzbIV)
 
 ### Equaly Operators
 
 - = one eual is defined value into the variables
 - == Two equals is check the value between variable but it is not the same value javaScript will change the value from number to string
 - === Three equals is the different from the two equal, that is all meannig such as data type and the value
-
-### Code Challenge Operator
-
-```js
-//Code Challence operators
-// First is averg the value in thos variables
-
-// John team
-var firstJohn = 116;
-var secondJohn = 94;
-var thirdJohn = 123;
-
-var averageJohn = (firstJohn + secondJohn + thirdJohn) / 3;
-console.log("the average of John is " + averageJohn);
-
-// Mike team
-var firstMike = 116;
-var secondMike = 94;
-var thirdMike = 123;
-
-var averageMike = (firstMike + secondMike + thirdMike) / 3;
-console.log("The average of Mike is  " + averageMike);
-
-// if else statement
-if (averageJohn > averageMike) {
-  console.log("John is the Winner with this score " + averageJohn);
-} else if (averageMike > averageJohn) {
-  console.log("Mike is the Winner with this score " + averageMike);
-} else {
-  console.log("There is a draw");
-}
-
-// swtich case style
-switch (true) {
-  case averageJohn > averageMike:
-    console.log("John is the Winner with this score " + averageJohn);
-    break;
-  case averageMike > averageJohn:
-    console.log("Mike is the Winner with this score " + averageMike);
-    break;
-  default:
-    console.log("there is a draw");
-}
-
-// ternary style
-averageJohn > averageMike
-  ? console.log("John is the Winner with this score " + averageJohn)
-  : console.log("Mike is the Winner with this score " + averageMike);
-```
 
 ### Function
 

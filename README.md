@@ -30,12 +30,12 @@ javaScript เป็นภาษาโปรแกรมคอมพิวเต
 5. [Function](#Function)
 6. [Array](#Array)
 7. [Object](#Object)
-8. [Loop](#Loop)
-9. [condition and break](#condition-and-break)
-10. [Hoisting](#Hoisting)
-11. [Method Borrowing](#Method-borrowing)
+8. [Interation](#Interation)
+9. [Hoisting](#Hoisting)
+10. [Method Borrowing](#Method-borrowing)
+11. [Scrop and Scropchain](#Scrop-and-Scropchain)
 12. [DOM](#DOM)
-13. [Exercise](#Exercise)
+13. [Exercise](Exercise)
 14. [Code Challenge Operator](CodeChallenge)
 
 ### Link สำหรับอ่านเพิ่มเติม
@@ -120,7 +120,7 @@ var _book = "javaScript";
 var $number = 1;
 ```
 
-### Variables and Data type
+### 2. Variables and Data type
 
 ```js
 // string
@@ -146,7 +146,7 @@ var teacher = null;
 * typeof(variableName)
 ```
 
-### Data Types
+Data Types
 
 1. Number
 2. String
@@ -193,11 +193,11 @@ console.log(typeof markAndJohn);
 console.log(typeof yearJohn);
 ```
 
-### Operator Precedence
+> Operator Precedence
+>
+> ลำดับความสำคัญทางคณิตศาสตร์ ลำดับการ + - \* / ว่าจะทำอันไหนก่อน อันไหนหลัง นั้งเอง
 
-ลำดับความสำคัญทางคณิตศาสตร์ ลำดับการ + - \* / ว่าจะทำอันไหนก่อน อันไหนหลัง นั้งเอง
-
-### if else statement
+### 4. Condition statement
 
 if else statement คือกการตรวจเช็คค่าว่าเป็นไปตามเงื่อนไขที่เรากำหนดหรือไม่ ถ้าเป็นไปตามที่เรากำหนกด จะให้โปรแกรมของเราทำอะไร ถ้าไม่เป็นไปตามที่เรากำหนดจะให้โปรแกรมของเราทำงานอย่างไร โดยส่วนมากจะเป็นแบบ Boolean(Ture, False) ตัวอย่างโค้ด
 
@@ -266,13 +266,13 @@ if (BMIsJohn > BMIsPob) {
 
 โจทย์สำหรับฝึก condition statement [โจทย์สำหรับฝึก crdit:http://www.comscicafe.com/](http://www.comscicafe.com/article/93/workshop-selection-statements-part-2#.XqzR_agzbIV)
 
-### Equaly Operators
+Equaly Operators
 
 - = one eual is defined value into the variables
 - == Two equals is check the value between variable but it is not the same value javaScript will change the value from number to string
 - === Three equals is the different from the two equal, that is all meannig such as data type and the value
 
-### Function
+### 5. Function
 
 เวลาที่เราจะต้องเขียนโปรแกรมสำหรับคำนวณหรือว่า ต้องการให้โปรแกรมต้องทำงานตามที่เราต้องการ ถ้าหากเราไม่เขียนแบบเป็น Function เราจะต้องเขียนคำส่ังนั้นซ้ำๆ เป็นจำนวนมาก แต่ว่า ถ้าหากเราเขียนโปรแกรมด้วย Function เราจะสามารถเรียกใช้ชุดคำสั่งนั้นได้โดยที่เราไม่ต้องไปเขียนคำสั่งซ้ำๆ กันจำนวนมากนั้นเอง ยกตัวอย่าง Function คำนวณอายุ ถ้าหากเราไม่เขียนเป็น function เราจะต้องเขียนคำสั่งดังนี้
 
@@ -321,7 +321,7 @@ yearOld("Mark", 1995);
 
 ซึ่งเราจะเห็นว่าเราไม่จำเป็นที่จะต้องเขียนคำสั่งซ้ำๆ เพียงแค่เราเรียนใช้ Function เท่านั้นก็สามารถเรียกใช้ คำส่ังที่เราต้องการได้เลย
 
-### Array
+### 6. Array
 
 Array คือสิ่งที่เราสามารถที่จะเอาอะไรก็ได้เก็บไว้ในตัวแปร เพียงตัวแปรเดียว อย่างที่เราเห็นในบทเรียนที่ผ่านมา เราจะต้องสร้างตัวแปรสำหรับคนทีละคน แต่พอเราสร้างตัวแปรแบบ Array เราสามารถที่เอาชื่อของที่คนเข้ามาอยู่ในที่เดียวกันได้ ยกตัวอย่าง Array ดังต่อไปนี้
 
@@ -365,7 +365,7 @@ if (John.indexOf("Designer") === -1) {
 }
 ```
 
-### Object
+### 7. Object
 
 เราสามารถที่จะนำเอาค่าเข้าไปเก็บใน Object ได้หลากหลายค่า โดยภายในจะประกอบไปด้วย key: vulue  
 Example
@@ -398,7 +398,7 @@ var Tle = {
 };
 ```
 
-### Loop
+### 8. Interation
 
 Loop ก็คือการวนซ้ำอันเอง ถ้าหากเราไม่ใช้ Loop เราจะต้องเขียนทุกอย่างด้วยตัวเราเอง ยกตัวอย่าง array john หากเราต้องการเอาข้อมูลมาแสดงทีละตัว เราจะต้องใช้ console.log(john[ที่ตัว ไปเรื่อยๆ]); ตามตัวอย่าง แต่ว่า ถ้าหากเราใช้ Loop เราไม่จำเป็นต้องเขียนเองทั้งหมด
 
@@ -618,29 +618,4 @@ DOM (Document Object Model)
 
 - document.querySelector('#score-0').textContent = dice;
 
-### Exercise
 
-1. ### The Problem
-1. Have got a picture
-1. Have got a button
-1. They are center
-1. If the user click on hide that picture hide the display.
-   ![hidepicture](./assets/HidePiceture.png)
-
-### Example code
-
-```html
-<div class="container">
-  <div class="hideThis">
-    <img src="path ที่เราต้องการให้รูปภาพมาแสดง" alt="picture" />
-  </div>
-  <button id="hidepiceture" onclick="hidePicture()">Hide</button>
-</div>
-
-<script>
-  //function declaration
-  function hidePicture() {
-    document.querySelector(".hideThis").style.display = "none";
-  }
-</script>
-```

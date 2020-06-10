@@ -617,5 +617,3 @@ DOM (Document Object Model)
 //select the elelment
 
 - document.querySelector('#score-0').textContent = dice;
-
-

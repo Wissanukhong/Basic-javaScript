@@ -80,3 +80,27 @@ switch (getNumber2 === 10) {
 getNumber2 === 10
   ? console.log(`The value 0f getNumber2 is ${getNumber2} it is equals 10`)
   : console.log(`The value of getNumber2 is ${getNumber2} it is equals 10`);
+
+// 3.ถ้าหากผู้ใช้เข้าร้านอายุน้อยกว่า 12 ปี จ่ายเงิน 100 บาท แต่ไม่ถ้าอายุมากกว่า 12 - 50  ปี จะต้องจ่ายเงิน 200 บาท แต่ถ้าเกิน 51 ปีขึ้นไป ไม่ต้องจ่ายเงิน
+var age = 35;
+
+// if else statement
+if (age > 0  && age < 12 ) {
+  console.log(`Your age is ${age} years old your must pay at 100 Bath`);
+} else if (age >= 12 && age < 50) {
+  console.log(`Your age is ${age} years old your must pay at 200 Bath`);
+} else {
+  console.log(`Your age is ${age} years old Your don not pay the bill`)
+}
+
+// swtich case is a strong more than a if else 
+switch (true) {
+  case age > 0 && age < 12 : 
+    console.log(`Your age is ${age} years old your must pay at 100 Bath`);
+    break;
+  case age >= 12 && age < 50 :
+    console.log(`Your age is ${age} years old your must pay at 200 Bath`);
+    break;
+  default :
+    console.log(`something is wrong`);
+}

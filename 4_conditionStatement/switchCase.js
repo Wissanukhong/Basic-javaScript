@@ -1,4 +1,4 @@
-// Switch Case
+// Switch Case is a strong condition more than if else statement 
 var name = "Tle";
 var job = "Doctor";
 
@@ -20,12 +20,12 @@ switch (job) {
 var money = 25;
 
 switch (true) {
-    case money <= 20 :
-        console.log("Lower");
-        break;
-    case money >= 25 :
-        console.log("More");
-        break;
-    default :
-        console.log("Something is worng");
+  case money <= 20:
+    console.log("Lower");
+    break;
+  case money >= 25:
+    console.log("More");
+    break;
+  default:
+    console.log("Something is worng");
 }

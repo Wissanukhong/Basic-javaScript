@@ -60,24 +60,52 @@ document.querySelector(".btn-roll").addEventListener("click", function () {
   if (dice !== 1) {
     // Add score
     roundScore += dice;
-    document.querySelector('#current-' + activePlayer).textContent = roundScore;
+    document.querySelector("#current-" + activePlayer).textContent = roundScore;
   } else {
     // next player
-    activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
-    roundScore = 0; 
-
-    // set current content = 0 
-    document.getElementById('current-0').textContent = '0';
-    document.getElementById('current-1').textContent = '0';
-
-    // change the active
-    document.querySelector('.player-0-panel').classList.toggle('active');
-    document.querySelector('.player-1-panel').classList.toggle('active');
-
-    // document.querySelector('.player-0-panel').classList.remove('active');
-    // document.querySelector('.player-1-panel').classList.add('active');
-
-    //hide the Dice again
-    document.querySelector('.dice').style.display = 'none';
+    nextPlayer();
   }
 });
+
+// bottom hold the dice and update the value
+document.querySelector(".btn-hold").addEventListener("click", function () {
+  // Add Current score to global score
+  scores[activePlayer] += roundScore;
+
+  // Update the UI
+  document.querySelector("#score-" + activePlayer).textContent =
+    scores[activePlayer];
+
+  // Check if player won the game
+  if (scores[activePlayer] >= 10) {
+    document.querySelector("#name-" + activePlayer).textContent = "winner!";
+    // ถ้าหากชนะแล้วเราต้องการให้เคลียร์หน้าจอกลับไปเป็น 0 เหมือนเริ่มต้นอีกรอบ เราจะต้องใช้คำสั่งนี้
+    document.querySelector(".dice").style.display = "none";
+    document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
+    document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
+  } else {
+    // next player
+    nextPlayer();
+  }
+});
+
+// function nextPlayer
+function nextPlayer() {
+  // next player
+  activePlayer === 0 ? (activePlayer = 1) : (activePlayer = 0);
+  roundScore = 0;
+
+  // set current content = 0
+  document.getElementById("current-0").textContent = "0";
+  document.getElementById("current-1").textContent = "0";
+
+  // change the active
+  document.querySelector(".player-0-panel").classList.toggle("active");
+  document.querySelector(".player-1-panel").classList.toggle("active");
+
+  // document.querySelector('.player-0-panel').classList.remove('active');
+  // document.querySelector('.player-1-panel').classList.add('active');
+
+  //hide the Dice again
+  document.querySelector(".dice").style.display = "none";
+}

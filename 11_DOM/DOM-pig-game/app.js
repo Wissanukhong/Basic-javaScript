@@ -19,11 +19,14 @@ GAME RULES:
 // เขียนแบบ Clean มากยิ่งขึ้น
 var scores, roundScore, activePlayer, dice;
 
-scores = [0, 0];
-roundScore = 0;
-activePlayer = 0;
+// เรียกใช้ function init จากด้านล่าง
+init();
+// D.R.Y [dry principle]
+// scores = [0, 0];
+// roundScore = 0;
+// activePlayer = 0;
 
-document.querySelector("#current-" + activePlayer).textContent = dice;
+// document.querySelector("#current-" + activePlayer).textContent = dice;
 // select the elelment
 // document.querySelector('#current-' + activePlayer).textContent = dice;
 // document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>'
@@ -32,13 +35,13 @@ document.querySelector("#current-" + activePlayer).textContent = dice;
 // .innerHTML คือการเข้าไปเปลี่ยนหรือว่าเขียน  html ให้มีค่าตามที่เราต้องการ
 
 // hide the picture for the first time
-document.querySelector(".dice").style.display = "none";
+// document.querySelector(".dice").style.display = "none";
 
 // set the score to zero before the game starting
-document.getElementById("score-0").textContent = "0";
-document.getElementById("score-1").textContent = "0";
-document.getElementById("current-0").textContent = "0";
-document.getElementById("current-1").textContent = "0";
+// document.getElementById("score-0").textContent = "0";
+// document.getElementById("score-1").textContent = "0";
+// document.getElementById("current-0").textContent = "0";
+// document.getElementById("current-1").textContent = "0";
 
 // addEventListener is when we click this bottom what we want it to do
 // anonymous function
@@ -73,16 +76,19 @@ document.querySelector(".btn-hold").addEventListener("click", function () {
   scores[activePlayer] += roundScore;
 
   // Update the UI
-  document.querySelector("#score-" + activePlayer).textContent =
-    scores[activePlayer];
+  document.querySelector("#score-" + activePlayer).textContent = scores[activePlayer];
 
   // Check if player won the game
   if (scores[activePlayer] >= 10) {
     document.querySelector("#name-" + activePlayer).textContent = "winner!";
     // ถ้าหากชนะแล้วเราต้องการให้เคลียร์หน้าจอกลับไปเป็น 0 เหมือนเริ่มต้นอีกรอบ เราจะต้องใช้คำสั่งนี้
     document.querySelector(".dice").style.display = "none";
-    document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
-    document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
+    document
+      .querySelector(".player-" + activePlayer + "-panel")
+      .classList.add("winner");
+    document
+      .querySelector(".player-" + activePlayer + "-panel")
+      .classList.remove("active");
   } else {
     // next player
     nextPlayer();
@@ -108,4 +114,27 @@ function nextPlayer() {
 
   //hide the Dice again
   document.querySelector(".dice").style.display = "none";
+}
+
+// New game
+document.querySelector(".btn-new").addEventListener("click", init);
+
+// function init
+function init() {
+  scores = [0, 0];
+  roundScore = 0;
+  activePlayer = 0;
+
+  document.querySelector("#current-" + activePlayer).textContent = dice;
+  document.querySelector(".dice").style.display = "none";
+  document.getElementById("score-0").textContent = "0";
+  document.getElementById("score-1").textContent = "0";
+  document.getElementById("current-0").textContent = "0";
+  document.getElementById("current-1").textContent = "0";
+  document.getElementById("name-0").textContent = "Player 1";
+  document.getElementById("name-2").textContent = "Player 2";
+  document.querySelector('.player-0-panel').classList.remove('winner!');
+  document.querySelector('.player-1-panel').classList.remove('winner!');
+  document.querySelector('.player-1-panel').classList.remove('active!');
+  document.querySelector('.player-0-panel').classList.add('active');
 }

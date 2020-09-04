@@ -38,3 +38,15 @@ function foo(i) {
 }
 foo(3);
 
+// Automatically Global
+myFunction();
+
+// code here can use carName
+
+function myFunction() {
+    carName = "Volvo";
+}
+
+// call html file
+// code here can use window.carName
+document.getElementById("demotestfunction").innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ratione, ut perferendis quam neque sed eum delectus autem? " + window.carName;

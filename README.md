@@ -3,40 +3,49 @@
   <h1>javaScript</h1>
 </div>
 
+- [Front-end](#front-end)
+- [Back-end](#back-end)
+  - [Link สำหรับอ่านเพิ่มเติม](#link-สำหรับอ่านเพิ่มเติม)
+  - [1. Statement](#1-statement)
+  - [2. Variables](#2-variables)
+  - [ชนิดของตัวแปร](#ชนิดของตัวแปร)
+  - [หลักการตั้งชื่อตัวแปรสำหรับภาษา javaScript](#หลักการตั้งชื่อตัวแปรสำหรับภาษา-javascript)
+  - [Variables name](#variables-name)
+  - [2. Variables and Data type](#2-variables-and-data-type)
+  - [3. Operators](#3-operators)
+  - [4. Condition statement](#4-condition-statement)
+  - [5. Function](#5-function)
+  - [6. Array](#6-array)
+  - [7. Object](#7-object)
+  - [8. Interation](#8-interation)
+  - [Example 1](#example-1)
+  - [continue and break](#continue-and-break)
+  - [Quiz](#quiz)
+  - [Hoisting](#hoisting)
+    - [Example](#example)
+  - [Methord borrowing](#methord-borrowing)
+  - [DOM](#dom)
+  - [Game](#game)
+
 javaScript เป็นภาษาโปรแกรมคอมพิวเตอร์ที่ใช้สำหรับเขียนโปรแกรมสำหรับ Website ในปัจจุบันได้รับความนิยมเป็นอย่างมากสำหรับพัฒนาโปรแกรมที่หลากหลายมากขึ้นไม่ว่าจะเป็น Web Application ต่างๆ ซึ่งเราจะสามารถพัฒนาโปรแกรมได้หลากหลายมากยิ่งขึ้นโดยที่เราเรียนรู้เพียงแค่ภาษา JavaScript เพียงแค่ภาษาเดียวนั้นเท่านั้นเอง ไม่ว่าจะเป็น Front-end หรือว่า Back-end เราก็สามารถที่จะใช้ภาษา JavaScipt ในการพัฒนาได้ด้วย
 
 > # javaScipt
 >
 > javaScrip เป็นภาษา Programming แบบ Dynamic type กล่าวคือ สามารถเปลี่ยนแปลง data type ได้ตลอดเวลานั้นเอง
 
-#### Front-end
+## Front-end
 
 - html
 - css
 - javaScript
 - React, Vue, Angular
 
-#### Back-end
+## Back-end
 
 - Nodejs
 - Express
 
-## contents
 
-1. [Statement](#Statement)
-2. [Variables and Data type](#Variables)
-3. [Operators](#Operators)
-4. [condition statement](#condition-statement)
-5. [Function](#Function)
-6. [Array](#Array)
-7. [Object](#Object)
-8. [Interation](#Interation)
-9. [Hoisting](#Hoisting)
-10. [Method Borrowing](#Method-borrowing)
-11. [Scrop and Scropchain](#Scrop-and-Scropchain)
-12. [DOM](#DOM)
-13. [Exercise](Exercise)
-14. [Code Challenge Operator](CodeChallenge)
 
 ### Link สำหรับอ่านเพิ่มเติม
 

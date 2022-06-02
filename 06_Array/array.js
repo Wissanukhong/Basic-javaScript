@@ -12,20 +12,20 @@ console.log(names);
 var John = ["John", "Smith", 1993, "Teacher"];
 console.log(John)
 
-// Insert infront of the array
+// Insert in front of the array
 John.unshift("mr.");
 console.log(John)
 
 // Ternary conditional
-var checkJob = John.indexOf("Designer") === -1 
+var checkJob = John.indexOf("Designer") === -1
     ? "John is not Designer" // ถ้าหากอาชีพไม่ใช้ Designer ให้แสดงว่าคำนี้
     : "John is a Designer" // ถ้าหากอาชีพเป็น Designer ให้แสดงคำนี้
 console.log(checkJob)
 
 // if else statement, if else condition
-if (John.indexOf("Designer") === -1 ) {
+if (John.indexOf("Designer") === -1) {
     console.log("John is not Designer");
-}else {
+} else {
     console.log("John is a Designer")
 }
 

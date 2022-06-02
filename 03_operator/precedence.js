@@ -1,4 +1,4 @@
-// the important of opertors 
+// the important of operators 
 // Operators Precedence
 var now = 2018;
 var yearJohn = 1989;
@@ -9,5 +9,5 @@ console.log(isFullAge);
 
 var ageJohn = now - yearJohn;
 var ageMark = 35;
-var average = ageJohn + ageMark /2;
+var average = ageJohn + ageMark / 2;
 console.log(average)

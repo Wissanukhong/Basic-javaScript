@@ -13,10 +13,10 @@ console.log(John);
 var day = 166 - 26;
 console.log(day);
 
-var eachdaay = day / 6;
-console.log(eachdaay);
+var eachDay = day / 6;
+console.log(eachDay);
 
-// Coding Chhalleng for object
+// Coding Challenge for object
 var Tle = {
   fullname: "Wissanu Khongjandee",
   mass: 80,
@@ -37,12 +37,12 @@ var Mark = {
   },
 };
 
-Tle.calcBMI(); // เรียกใช้ Function expresstion
+Tle.calcBMI(); // เรียกใช้ Function expression
 Mark.calcBMI();
 console.log(Tle, Mark);
 
 if (Tle.calcBMI > Mark.calcBMI) {
-  console.log(Tle.fullname + "has a height than BMI of " + Tle.bmi);
+  console.log(Tle.fullName + "has a height than BMI of " + Tle.bmi);
 } else if (Mark.calcBMI > Tle.calcBMI) {
   console.log(Mark.fullName + "has a height than BMI of " + Mark.bmi);
 } else {
@@ -53,9 +53,9 @@ if (Tle.calcBMI > Mark.calcBMI) {
 var price = {
   yourOwn: "Wissanu",
   car: 15000,
-  Motobike: 3000,
+  Motorbike: 3000,
   tax: function () {
-    this.totalTax = this.car * 1.07 + this.Motobike * 1.07;
+    this.totalTax = this.car * 1.07 + this.Motorbike * 1.07;
     return this.totalTax;
   },
 };

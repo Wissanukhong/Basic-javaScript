@@ -31,7 +31,7 @@ switch (number1 >= number3) {
     console.log(`มีค่าเท่ากัน`);
 }
 
-// Ternaly statement style
+// Ternary statement style
 number1 >= number3
   ? console.log(
     `number1 มีค่ามากกว่า number3 ค่าของ number1, 2 คือ ${number1}, ${number3}`
@@ -40,7 +40,7 @@ number1 >= number3
     `number1 มีค่าน้อยกว่า number3 number1, 2 คือ ${number1}, ${number3}`
   );
 
-// Interation statement (loop)
+// Interaction statement (loop)
 for (var i = 0; i < 10; i++) {
   console.log(i);
 }

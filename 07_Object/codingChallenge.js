@@ -4,24 +4,24 @@ var john = {
   bills: [124, 48, 268, 180, 42],
   culcTip: function () {
     this.tips = [];
-    this.total= [];
+    this.total = [];
 
-     for (var i = 0; i < this.bills.length; i++) {
-        var percenct;
-        var bill = this.bills[i];
-        
-        if (bill < 50 ) {
-            percenct = .2;
-        } else if ( bill >= 50  && bill < 200) {
-            percenct = .15;
-        } else {
-            percenct = .1;
-        }
+    for (var i = 0; i < this.bills.length; i++) {
+      var percent;
+      var bill = this.bills[i];
 
-        this.tips[i] = bill * percenct;
-        this.total[i] = bill + (bill * percenct);
+      if (bill < 50) {
+        percent = .2;
+      } else if (bill >= 50 && bill < 200) {
+        percent = .15;
+      } else {
+        percent = .1;
+      }
 
-     }
+      this.tips[i] = bill * percent;
+      this.total[i] = bill + (bill * percent);
+
+    }
 
   },
 };

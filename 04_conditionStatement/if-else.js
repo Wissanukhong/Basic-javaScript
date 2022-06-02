@@ -9,7 +9,7 @@ if (civilStatus === "married") {
   console.log(firstName + " is not married ");
 }
 
-// Secondstyle Boolean
+// Second style Boolean
 var isMarried = true;
 if (isMarried) {
   console.log(firstName + " is married ");
@@ -35,11 +35,11 @@ if (BMIsJohn > BMIsPob) {
 }
 
 switch (BMIsJohn > BMIsPob) {
-  case true :
+  case true:
     console.log("BMIsJonh's John more than BMIsPobs Pob");
     break;
-  case false :
+  case false:
     console.log("BIMsJohn's less than BMIsPobs Pob");
-  default :
+  default:
     console.log("something wrong")
 }

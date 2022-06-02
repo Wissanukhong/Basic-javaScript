@@ -1,9 +1,9 @@
 // Basic Operators
 var year = 2020;
-var yearJohn = year -28;
-var yearMark = year -33;
+var yearJohn = year - 28;
+var yearMark = year - 33;
 
-// Mathoperators
+// Math operators
 console.log(yearJohn);
 console.log(yearMark);
 console.log(yearJohn + 2)

@@ -27,5 +27,5 @@ switch (true) {
     console.log("More");
     break;
   default:
-    console.log("Something is worng");
+    console.log("Something is wrong");
 }

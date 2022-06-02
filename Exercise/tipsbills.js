@@ -4,7 +4,7 @@ var john = {
     bills: [124, 48, 268, 180, 42],
     calcTips: function () {
         this.tips = [];
-        this.falnaly = [];
+        this.finally = [];
 
         for (var i = 0; i < this.bills.length; i++) {
             var percent;
@@ -17,14 +17,14 @@ var john = {
             } else {
                 percent = .1;
             }
-        
+
             this.tips[i] = bill * percent;
-            this.falnaly[i] = bill + (bill * percent)
+            this.finally[i] = bill + (bill * percent)
         }
     },
 }
 
 john.calcTips();
-console.log(john); 
+console.log(john);
 
 

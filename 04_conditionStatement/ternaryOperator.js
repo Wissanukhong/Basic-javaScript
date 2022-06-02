@@ -18,10 +18,10 @@ age >= 18
 // if else statement 
 var drink = age;
 
-if ( age >= 18 ) {
-    var drink = "You can drink beer"
+if (age >= 18) {
+  var drink = "You can drink beer"
 } else {
-    var drink = "You can not drink beer"
+  var drink = "You can not drink beer"
 }
 
 console.log(drink);
